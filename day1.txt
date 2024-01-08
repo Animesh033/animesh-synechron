@@ -1,0 +1,250 @@
+sdlc :
+requirement anaysis --- design ---- developmnt/code --- testing(static testing) ---- [  build/integration ]  generate artifact (executable) ---testing(dynamic testing) deployed(release) server
+
+
+
+
+waterfall methodology:
+xyz app :
+
+100 modules ../apis :
+--
+---
+----
+----- 4 months 
+
+testing --- 3 mnths
+
+deploymnt --- 2-3 weeks --- feedbck of 100 moduls
+
+
+
+agile methdology :
+
+100/4  :
+
+25 modules (mvp) sprint
+25 sprint 2                  ---------- 50 modules
+25 3                                              ------------------ 75 modules
+25 4    
+
+
+
+
+
+code -- build
+
+
+
+
+
+
+cloud :
+
+aws/azure/gcp
+
+storage
+compute
+
+
+
+machine/server 
+
+machine is having no defined purpose : cpu,ram
+
+
+server , cpu,ram :: defined purpose : db servers, app servers , windows servers, citrix
+
+
+--------------------------
+
+
+ec2 service : 
+server : instance 
+region : us-east-1 , nv
+
+
+ami : Ubuntu Server 20.04 LTS (HVM), SSD Volume Type
+instancetype  : t2.micro
+raman-synechron-sg
+
+
+
+username : ramankhanna : namarkhanna ---------------------------- 
+
+
+
+
+
+------------------------------------------------------------------
+
+installed gitbash :
+
+https://git-scm.com/downloads
+
+github account...
+
+
+create a github remote repo 
+
+
+GIT INITIALIZING :
+
+ pwd
+  511  mkdir raman-synechron
+  512  ls
+  513  ls raman*
+  514  cd raman-synechron/
+  515  ls
+  516  ls -a
+  517  clear
+  518  ls
+  519  vi file1
+  520  ls
+  521  ls
+  522  git config --global user.email "raman@mail.com"
+  523  git config --global user.name "raman"
+  524  git status
+  525  git init
+  526  ls -a
+  527  ls
+  528  git status
+
+
+
+ADDING TO STAGE AREA : AND COMMITING TO LOCAL GIT REPO :
+
+
+git status
+  531  ls
+  533  clear
+  534  ls
+  535  git status
+  536  ls
+  537  git add .
+  538  git status
+  539  git commit -m "added a file to local git repo"
+  540  git status
+  541  ls
+  542  vi file2
+  543  ls
+  544  git status
+  545  git add file2
+  546  git status
+  547  git commit -m "commiting 2nd file to localgit repo"
+  548  git status
+  549  ls
+  550  vi file2
+  551  git status
+  552  git add .
+  553  git commit -m "chnged content of file2"
+  554  git status
+  555  git log
+  556  clear
+
+==============================================
+
+CRETAE A LINK BTW REMOTE G  REPO AND LOCAL G REPO :
+
+
+ git status
+  561  ls -a
+  562  git status
+  563  git push origin master
+  564  git add origin https://github.com/ramannkhanna2/raman-synechron.git
+  565  git remote -v
+  566  git remote add origin https://github.com/ramannkhanna2/raman-synechron.git
+  567  git remote -v
+  568  ls
+  569  git push origin master
+  570  clear
+  571  ls
+  572  git pull origin master
+  573  ls
+  574  cat file3
+  575  clear
+  576  git status
+
+
+
+CLONING :
+
+   43  git clone https://github.com/ramannkhanna2/raman-synechron.git
+   44  ls
+
+
+---------------------
+
+
+BRANCHING :
+
+
+
+git status
+  581  git branch
+  582  git branch 2ndbranch
+  583  git branch
+  584  ls
+  585  git checkout 2ndbranch
+  586  git branch
+  587  ls
+  588  git status
+  589  git checkout master
+  590  ls
+  591  vi file1
+  592  vi file2
+  593  vi file3
+  594  git add .
+  595  git commit -m " made changes to all files"
+  596  git push origin master
+  597  clear
+  598  git checkout 2ndbranch
+  599  git branch
+  600  ls
+  601  vi file2
+  602  vi file1
+  603  vi file2
+  604  vi file3
+  605  git status
+  606  git add .
+  607  git commit -m "modified 2ndbranchfiles "
+  608  git status
+  609  git push origin 2ndbranch
+  610  history
+
+
+MERGING :
+
+
+
+git checkout 2ndbranch
+  691  mv file4 file1
+  692  mv file5 file2
+  693  git add .
+  694  git commit -m "ev"
+  695  git push origin 2ndbranch
+  696  git checkout master
+  697  ls
+  698  git merge 2ndbranch
+  699  ls
+  700  git branch -d 2ndbranch
+  701  git branch
+  702  git push --delete origin 2ndbranch
+  703  ls
+  704  git fetch --all
+  705  ls
+  706  git pull origin master
+  707  ls
+  708  rm -rf file1 file2
+  709  git pull origin master
+  710  ls
+  711  git reset --hard origin/master
+  712  ls
+  713  rm -rf file4 file5
+  714  ls
+  715  git add .
+  716  git commit -m"deleted files"
+  717  git push origin master
+  718  clear
+
+=======================================
