@@ -315,3 +315,55 @@ k exec -it raman-app2 -c container2 -- /bin/bash
 
 ==============================================================
 ```
+
+
+```
+
+
+
+ k run httpod --image httpd
+  139  k get pods
+  140  k get pods -o wide
+  141  curl 192.168.189.78
+  142  k expose pod httpod --name extpod --target-port 80 --port 80
+  143  k get svc
+  144  k describe svc extpod
+  145  k get pods -o wide
+  146  clear
+  147  k get pods
+  148  k get svc
+  149  k expose pod httpod --name extpodd --type NodePort --target-port 80 --port 80
+  150  k get svc
+  151  k delete svc extpod
+  152  k get svc
+  153  clear
+  154  k describe svc extpodd
+
+
+ k describe svc extpodd
+  155  clea
+  156  clear
+  157  history
+  158  k delete pods --all
+  159  k delete svc --all
+  160  clear
+  161  k get svc
+  162  k get pods
+  163  k create deploy ramannginx --image nginx --replicas 5
+  164  k get pods
+  165  k expose deploy ramannginx --name extnginx --type NodePort --target-port 80 --port 80
+  166  k get svc
+  167  k describe svc extnginx
+  168  k get pods -o wide
+  169  clear
+  170  k create deploy ramanhttp --image httpd --replicas 5
+  171  k expose deploy ramannhttp --name exthttp --type NodePort --target-port 80 --port 80
+  172  k expose deploy ramanhttp --name exthttp --type NodePort --target-port 80 --port 80
+  173  k get svc
+  174  k describe exthttp
+  175  k describe svc exthttp
+  176  clear
+
+
+---------------
+```
