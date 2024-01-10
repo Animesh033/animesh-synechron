@@ -107,3 +107,54 @@ clear
     8  kubectl get nodes -o wide
 
 ```
+
+```
+
+kubectl get nodes
+    8  kubectl get nodes -o wide
+    9  history
+   10  clear
+   11  alias k=kubectl
+   12  clear
+   13  k get nodes
+   14  k get pod
+   15  k get pods
+   16  k get pods -A
+   17  k get pods
+   18  k get pods -A -o wide
+   19  clear
+   20  k get pods -A -o wide
+   21  docker ps
+   22  clea
+   23  clear
+   24  k get pods -A -o wide
+   25  clea
+   26  clear
+   27  k get pods -A
+   28  k get pods
+   29  clear
+   30  k get pods -A | grep -i master
+   31  k get pods -A | grep -i worker1
+   32  k get pods -A
+   33  clear
+   34  k get pods -A -o wide | grep -i master
+   35  k get pods -A -o wide | grep -i worker2
+   36  k get pods -A -o wide | grep -i worker1
+   37  clear
+   38  k run ramanapp --image httpd
+   39  k get pods
+   40  k get pods -o wide
+   41  clear
+   42  k get pods -o wide
+   43  curl 192.168.189.65
+   44  k get pods
+   45  k get pods -A
+   46  clear
+   47  k get pods
+   48  k delete pod ramanapp
+   49  k get pods
+   50  k run ramanapp --image nginx
+   51  k get pods
+   52  k get pods -o wide
+
+```
