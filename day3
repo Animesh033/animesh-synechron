@@ -158,3 +158,115 @@ kubectl get nodes
    52  k get pods -o wide
 
 ```
+
+```
+
+
+commandline way 
+declarative 
+
+pods 
+
+
+
+ clear
+   55  k get api-resource
+   56  clear
+   57  k get api-resources
+   58  ls
+   59  vi pod.yml
+   60  k api-resources
+   61  clear
+   62  k api-resources
+   63  cat pod.yml
+   64  clear
+   65  ls
+   66  cat pod.yml
+   67  k get pods
+   68  vi pod.yml
+   69  ls
+   70  k create -f pod.yml
+   71  ls
+   72  k get pods
+   73  k get pods -o wide
+   74  k delete pods --all
+   75  ls
+   76  k get ppods
+   77  k get ods
+   78  k get pods
+   79  ls
+   80  k create -f pod.yml
+   81  k get pods
+   82  clear
+   83  ls
+   84  k get pods
+   85  k delete -f pod.yml
+   86  vi pod.yml
+   87  k create -f pod.yml
+   88  k get pods
+   89  k get pods -o wide
+   90  k exec -it raman-app2 -c container1 -- /bin/bash
+   91  k exec -it raman-app2 -c container1 -- ls
+   92  k exec -it raman-app2 -c container1 -- mkdir raman
+   93  k exec -it raman-app2 -c container1 -- ls
+   94  k exec -it raman-app2 -c container1 -- /bin/bash
+   95  ls
+   96  k get pods
+   97  k exec -it raman-app2 -c container2 -- /bin/bash
+
+
+---------------------------------
+
+controller manager : mngemnt pod which state part :
+
+deployment  : object
+   replicaset : object
+
+
+
+
+10 pods -- httpd
+
+
+ramandeploy : deployment
+        ramandeploy-59854bf468 : rs
+                   ramandeploy-59854bf468-45ljd   1/1     Running   0          95s
+
+
+
+
+
+
+k exec -it raman-app2 -c container2 -- /bin/bash
+   98  clear
+   99  history
+  100  k get pods
+  101  vi pod.yml
+  102  k delete pods --all
+  103  k create -f pod.yml
+  104  k get pods
+  105  k describe pod raman-app3
+  106  clear
+  107  k get pods
+  108  clear
+  109  k get pods
+  110  k delete pods --all
+  111  clear
+  112  k get pods
+  113  k create deploy ramandeploy --image httpd --replicas 10
+  114  k get all
+  115  clear
+  116  k get deploy
+  117  k get rs
+  118  k get pods
+  119  k delete pod ramandeploy-59854bf468-s7kts
+  120  k get pods
+  121  k scale deploy ramandeploy --image 5
+  122  k scale deploy ramandeploy --replicas 5
+  123  k get pods
+  124  k scale deploy ramandeploy --replicas 15
+  125  k get pods
+  126  k get pods -o wide
+
+==============================================================
+```
