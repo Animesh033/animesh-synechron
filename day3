@@ -1,0 +1,69 @@
+KUBERNETES :
+
+```
+
+  
+kubernetes cluster: 
+master node : management pods
+worker nodes : my application pods
+
+kubectl run : master
+
+
+
+kube cluster from scratch
+kubeadm : helps to create a kube cluster : full control on my master as well worker
+aws (eks)/gcp (gks)/azure (aks) : managed clusters : without control of master
+
+
+3 servers :
+
+1 master : t2.medium : 
+2 worker nodes : t2.micro : free tier 
+
+
+
+Software Image (AMI)
+Ubuntu Server 20.04 LTS (HVM)
+
+Virtual server type (instance type)
+t2.medium (only for master node)
+t2.micro (only for worker nodes)
+
+Firewall (security group)
+raman-synechron-sg (all ports open)
+
+Storage (volumes)
+1 volume(s) - 20 GiB
+
+
+
+
+#!/bin/bash
+sudo echo -e "Tech@2020\nTech@2020" | passwd root;
+sudo cp -p /etc/ssh/sshd_config /etc/ssh/sshd_config_backup;
+sudo sed -i 's/^PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config;
+sudo sed -i 's/^PermitRootLogin*/PermitRootLogin yes/' /etc/ssh/sshd_config;
+sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config;
+sudo systemctl restart sshd;
+sudo systemctl stop firewalld;
+sudo systemctl disable firewalld;
+
+
+
+
+
+
+
+---------
+after creation : login :
+
+ssh root@publicip
+
+
+
+hostnamectl set-hostname master
+bash
+
+
+```
