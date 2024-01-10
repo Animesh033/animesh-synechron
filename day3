@@ -67,3 +67,43 @@ bash
 
 
 ```
+
+```
+==============================================
+
+
+10.0.0.0/24
+
+32-24 : 8
+
+2 raise to power 8
+
+
+
+
+script :
+
+on master : full script
+make a note of the join command..
+
+on worker nodes : not full script
+
+till .....iptables=1
+
+
+
+---
+
+run the join command on both wrker nodes 
+
+----
+clear
+    2  ls
+    3  vi script
+    4  l
+    5  sh script
+    6  kubectl
+    7  kubectl get nodes
+    8  kubectl get nodes -o wide
+
+```
