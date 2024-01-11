@@ -33,3 +33,36 @@ Storage (volumes)
 
 
 ```
+
+```
+
+
+installing jenkins
+
+https://pkg.jenkins.io/debian-stable/
+
+
+--------------------------------------------
+
+
+---
+ clear
+   28  systemctl status jenkins
+   29  vi /lib/systemd/system/jenkins.service
+   30  systemctl daemon-reload
+   31  systemctl restart jenkins
+
+
+
+
+# Unix account that runs the Jenkins daemon
+# Be careful when you change this, as you need to update the permissions of
+# $JENKINS_HOME, $JENKINS_LOG, and (if you have already run Jenkins)
+# $JENKINS_WEBROOT.
+User=root
+Group=root
+
+
+
+-------
+```
