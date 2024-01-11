@@ -114,3 +114,22 @@ Group=root
    83  mvn
 
 ```
+
+
+```
+
+========================
+
+docker installlation :
+
+https://docs.docker.com/engine/install/ubuntu/#prerequisites
+
+----
+docker -v
+  110  docker ps
+  111  clear
+  112  docker run -dit --name c1 centos:7
+  113  docker ps
+
+
+```
