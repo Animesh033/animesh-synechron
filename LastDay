@@ -66,3 +66,51 @@ Group=root
 
 -------
 ```
+
+```
+
+ wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
+   42  ls
+   43  tar -xvzf apache-maven-3.9.4-bin.tar.gz
+   44  ls
+   45  cd apache-maven-3.9.4
+   46  ls
+   47  cd bin/
+   48  ls
+   49  ./mvn
+   50  clear
+   51  ls
+   52  cd /root/
+   53  ls
+   54  mvn
+   55  ./root/apache-maven-3.9.4/bin/mvn
+   56  clear
+   57  ls
+   58  cd apache-maven-3.9.4
+   59  ls
+   60  cd bin/
+   61  ls
+   62  cd /usr/bin/
+   63  ls
+   64  ls ls
+   65  cat ls
+   66  clear
+   67  ls
+   68  ls mkdir
+   69  cd /root/
+   70  ls
+   71  cd apache-maven-3.9.4
+   72  ls
+   73  cd bin/
+   74  ls
+   75  ln -s /root/apache-maven-3.9.4/bin/mvn  /usr/bin/
+   76  ls mvn
+   77  ls -ltr mvn
+   78  cd /usr/bin/
+   79  ls -ltr mvn
+   80  clear
+   81  cd /root/
+   82  ls
+   83  mvn
+
+```
