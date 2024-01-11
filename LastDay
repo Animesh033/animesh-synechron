@@ -1,0 +1,35 @@
+```
+
+pipeline :
+
+sdlc :
+source code (github)>>> build (maven) >> artifact (.jar,war) >> dockerfile  >> docker build (docker custom image) >> containerised app
+
+
+bot/autonomous system : jenkins : heart of cicd pipeline
+
+workflow : automatic : raman
+
+
+automate the task whenever any change : jobs in jenkins
+
+
+-------------------------
+
+creation of jenkin server :
+
+
+Software Image (AMI)
+Ubuntu Server 20.04 LTS (HVM)
+
+Virtual server type (instance type)
+t2.micro 
+
+Firewall (security group)
+raman-synechron-sg 
+
+Storage (volumes)
+1 volume(s) - 20 GiB
+
+
+```
