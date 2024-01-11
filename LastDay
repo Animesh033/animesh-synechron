@@ -157,3 +157,38 @@ Check your system IP in browser :
 IP:8081/raman
 
 ```
+
+
+```
+
+
+crossverify testing : 
+
+ htop
+    2  docker ps
+    3  clear
+    4  cd /var/lib/
+    5  ls
+    6  cd jenkins/
+    7  ls
+    8  cd workspace/
+    9  ls
+   10  cd p1-freestyle/
+   11  ls
+   12  cd target/
+   13  ls
+   14  docker ps
+   15  docker exec -it ba5e5298d606 -- /bin/bash
+   16  docker exec -it ba5e5298d606 /bin/bash
+   17  history
+
+
+
+root@ba5e5298d606:/usr/local/tomcat/webapps# history
+    1  ls
+    2  cd webapps
+    3  ls
+    4  history
+
+
+```
